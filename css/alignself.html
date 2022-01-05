@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex div{
+
+            border: 3px solid blue;
+            padding: 2%;
+            margin: 2%;
+            font-size: 30px;
+            
+
+        }
+        .flex{
+            display: flex;
+            /* height: 200px;
+            align-items: center; */
+            flex-direction: row;
+            
+
+        }
+        
+        .div1{
+            /* align-self: flex-start; */
+            /* flex-grow:5; */
+            /* flex-shrink: 2; */
+            order: -1;
+
+        }
+        .div2{
+            /* align-self: flex-end; */
+            /* flex-grow: 10; */
+            /* flex-shrink: 4; */
+            order: 1;
+
+        }
+        .div3{
+            /* align-self: stretch; */
+            /* flex-grow: 20; */
+            /* flex-shrink: 8; */
+            order: -4;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+</body>
+</html>
